@@ -1,4 +1,4 @@
-# Building a home network
+# Building a home networ
 
 ## Determining the IP Address of an end device
 There are generally two ways of searching for the IP address:
