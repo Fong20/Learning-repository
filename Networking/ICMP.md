@@ -1,1 +1,57 @@
-# ICMP
+# Internet Control Message Protocol (ICMP)
+- Error messages and informal messages are sent using the services of ICMP.  
+- ICMP is available for both IPv4 and IPv6. ICMPv4 is the messaging protocol for IPv4. ICMPv6 provides these same services for IPv6 but includes additional functionality.
+
+## Host Reachability
+- An ICMP Echo Message can be used to test the reachability of a host on an IP network. This use of the ICMP Echo messages is the basis of the ping utility.
+- The local host sends an ICMP Echo Request to a host. If the host is available, the destination host responds with an Echo Reply.
+
+## Destination or service unreachable
+- When a host or gateway receives a packet that it cannot deliver, it can use an ICMP Destination Unreachable message to notify the source that the destination or service is unreachable.
+- The message will include a code that indicates why the packet could not be delivered.
+
+### Destination unreachable codes for ICMPv4:
+- 0 = Net unreachable
+- 1 = Host unreachable
+- 2 = Protocol unreachable
+- 3 = Port unreachable
+
+### Destination unreachable codes for ICMPv6:
+- 0 = No route to destination
+- 1 = Communication with the destination is administratively prohibited (e.g., firewall)
+- 2 = Beyond scope of the source address
+- 3 = Address unreachable
+- 4 = Port unreachable
+
+## Time Exceeded
+- An ICMPv4 Time Exceeded message is used by a router to indicate that a packet cannot be forwarded because the Time to Live (TTL) field of the packet was decremented to 0.
+-  If a router receives a packet and decrements the TTL field in the IPv4 packet to zero, it discards the packet and sends a Time Exceeded message to the source host.
+-  ICMPv6 also sends a Time Exceeded message if the router cannot forward an IPv6 packet because the packet has expired.
+-  Instead of the IPv4 TTL field, ICMPv6 uses the IPv6 Hop Limit field to determine if the packet has expired.
+
+## ICMPv6 messages
+- ICMPv6 includes four new protocols as part of the Neighbor Discovery Protocol (ND or NDP).
+- ICMPv6 Neighbour Discovery (ND) is a smilar process to ARP used in IPv4
+
+### Four new protocols 
+- **Router solicitation (RS)** = sent by the host upon bootup to determine how to get the IPv6 address information dynamically.
+- **Router advertisement (RA)** = sent by IPv6-enabled routers every 200 seconds to provide addressing information to IPv6-enabled hosts. A host using Stateless Address Autoconfiguration (SLAAC) will set its default gateway to the link-local address of the router that sent the RA.
+- **Neighbour soliciataion (NS)** = It is used to check the uniqueness of an IPv6 address. The device will send an NS message with its own IPv6 address as the targeted IPv6 address. If another device on the network has this address, it will respond with an NA message. 
+- **Neighbour advertisement (NA)** =  To determine the MAC address for the destination. The device will send an NS message to the solicited node address which includes the known (targeted) IPv6 address. The device that has the targeted IPv6 address will respond with an NA message containing its Ethernet MAC address.
+
+## Ping and tracert testing
+
+### Ping
+- **Ping is an IPv4 and IPv6 testing utility** that **uses ICMP echo request and echo reply messages to test connectivity between hosts.**
+- **Ping has a timeout value for the reply.** If a reply is not received within the timeout, ping provides a message indicating that a response was not received. This may indicate that there is a problem, but could also indicate that security features blocking ping messages have been enabled on the network.
+
+### Pinging using loopback address
+- Pinging using the loopback address (127.0.0.1 for IPv4 and ::1 for IPv6) can be used to test the internal configuration of IPv4 or IPv6 on the local host.
+- A response from 127.0.0.1 for IPv4, or ::1 for IPv6, indicates that IP is properly installed on the host. This response comes from the network layer.
+-  An error message indicates that TCP/IP is not operational on the host.
+
+### Pinging the default gateway
+- You can also use ping to test the ability of a host to communicate on the local network. This is generally done by pinging the IP address of the default gateway of the host.
+- A successful ping to the default gateway indicates that the host and the router interface serving as the default gateway are both operational on the local network.
+-  If the default gateway does not respond but another host does, this could indicate a problem with the router interface serving as the default gateway.
+-  One possibility is that the wrong default gateway address has been configured on the host. Another possibility is that the router interface may be fully operational but have security applied to it that prevents it from processing or responding to ping requests.
