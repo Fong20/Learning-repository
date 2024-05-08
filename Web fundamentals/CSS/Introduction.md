@@ -21,3 +21,43 @@ content.** In most cases, the **user agent will typically be the web browser.**
 - Author style sheets are **style sheets which are applied by us, authors who develops the website.**
 - Everything we do to change the visual of the document, from choosing fonts, colours and laying out pages in CSS is done using author style sheets.
 - Author style sheets can be **applied inside an HTML document** or by **linking to an external file.**
+
+### Style sheet precedence
+The following CSS declarations are applied in this order (from lowest to highest priority):
+- user agent stylle sheet (web browser style sheet)
+- user style sheet normal
+- author style sheet normal
+- author style sheet important
+- user style sheet important
+
+Note: Without the usage of !importnant declaration, the order goes like this (author to user to browser style)
+
+## CSS selectors and declarations
+CSS is **composed of style rules that describe the styling to be applied to the HTML document.** Each rule consists of two parts which are:
+- **selector** = HTML element name, class name or an id name
+- **declaration** = CSS styling property and the value which is assigned to the property.
+
+**Example:**
+
+![image](https://github.com/Fong20/Learning-repository/assets/150316121/3fbaac24-ba6e-468d-979c-f09c11e4ead9)
+
+## Inserting style sheets
+There are generally three ways of inserting style sheets
+- Embedded
+- Inline
+- External
+
+  ### Embedded
+  - it is found in the head section of the HTML document
+  - it applies to the entire webpage
+ 
+  ### Inline
+  - It is found in the body section of the HTML document
+  - It only applies to a specific element
+  - This can be done by either using class selector or id selector
+ 
+  ### External
+  - All the **styling codes are stored in a separate file wth .css file extension.**
+  - It can be **applied to the HTML file by using the HTML link element in the head section of the HTML file.** The styling applies to all webpages as long as it is linked to the css file.
+ 
+    ![image](https://github.com/Fong20/Learning-repository/assets/150316121/d08332c1-abf8-4eaa-a530-b68798b69d88)
