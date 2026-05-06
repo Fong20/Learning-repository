@@ -31,3 +31,48 @@ Data structure is an organized way to store, manage, and retrieve data efficient
 - capacity is variable so it can expand or contract at any time
 - e.g. Linked list, Binary tree.
 
+## Loops
+
+1. Single Loop 
+for i in range(n):
+  work()
+
+2. Nested Loop
+for i in range(n):
+  for j in range(n):
+    work()
+
+3. Halving Loop
+i = n
+while i > 1:
+    i //= 2
+
+## Notations
+There are several mathematical tools used to analyze algorithm efficiency
+
+1. Big O Notation
+- Worst Case Scenario (highest possible value)
+- Upper bound or most amount of time required
+
+2. Big Omega Notation
+- Best Case Scenario (lowest possible value)
+- Lower bound or the least amount of time required
+
+3. Big Theta Notation
+- Average Case Scenario
+- Tight Bound, only if the best case and the worst case are the same.
+
+<img width="2030" height="1175" alt="image" src="https://github.com/user-attachments/assets/1affcdd7-c54d-4f38-9283-0bbdb0181ece" />
+
+## Big O notation
+Mathematical Expression that describes an upper bound (highest possible value) on how the running time or memory usage grows as input size increases.
+
+### Types of Big 0 complexities 
+The followiang diagram showcases the types of Big O complexities ranked from the best (fastest) to the worst (slowest)
+
+<img width="2189" height="809" alt="image" src="https://github.com/user-attachments/assets/5fca0ddd-1edb-4ee3-9c5f-5cd4c8779209" />
+
+
+### Loop Patterns and its Time complexity using Big O notation
+
+<img width="2230" height="1256" alt="image" src="https://github.com/user-attachments/assets/69357850-7d1b-4205-a683-6189e9de86a8" />
