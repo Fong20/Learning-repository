@@ -1,5 +1,17 @@
 # Introduction to Data Structure and Algorithms
 
+## Data Structure
+Data structure is an organized way to store, manage, and retrieve data efficiently, enabling effective access and modification depending on the use case.
+
+### Types of Data Structures
+1. Static Data Structure
+- capacity is fixed at creation
+- e.g. Array, Tuple
+
+2. Dynamic Data Structure
+- capacity is variable so it can expand or contract at any time
+- e.g. Linked list, Binary tree.
+
 ## Algotithm 
 Algorithm is defined as a procedure / formula to solve a problem
 
@@ -17,19 +29,7 @@ Note: Correctness is always the highest priority compared to efficiency
   
 2. Theoretical Analysis
 - Does not take into account of any hardware or software problems / limitations
-- It only focuses on identifying the amount of time taken based on the number of steps 
-
-## Data Structure
-Data structure is an organized way to store, manage, and retrieve data efficiently, enabling effective access and modification depending on the use case.
-
-### Types of Data Structures
-1. Static Data Structure
-- capacity is fixed at creation
-- e.g. Array, Tuple
-
-2. Dynamic Data Structure
-- capacity is variable so it can expand or contract at any time
-- e.g. Linked list, Binary tree.
+- It uses mathematical tools such as Big O notation which focuses on identifying the algorithm efficiency amount of time taken based on the number of steps, based on the function of the input size, n.
 
 ## Loops
 
@@ -65,7 +65,7 @@ There are several mathematical tools used to analyze algorithm efficiency
 <img width="2030" height="1175" alt="image" src="https://github.com/user-attachments/assets/1affcdd7-c54d-4f38-9283-0bbdb0181ece" />
 
 ## Big O notation
-Mathematical Expression that describes an upper bound (highest possible value) on how the running time or memory usage grows as input size increases.
+Mathematical Expression that describes an upper bound / the worst case (highest possible value) on how the running time or memory usage grows based on the input size, n.
 
 ### Types of Big 0 complexities 
 The followiang diagram showcases the types of Big O complexities ranked from the best (fastest) to the worst (slowest)
