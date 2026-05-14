@@ -25,7 +25,7 @@ A search algorithm is designed to solve a search problem.
 
 ### Bubble Sort
 - Repeatedly steps through the list, compares each pair of adjacent elements, and swaps them if they are in the wrong order .
-- Time complexity of O(n2)
+- Time complexity of O(n²)
 
 Steps:
 1. Compare the first two elements.
@@ -43,7 +43,7 @@ Example:
 
 ### Selection Sort
 - Repeatedly selects the smallest (or largest) element from the unsorted portion of the array and swaps it with the first unsorted element.
-- Time complexity of O(n2)
+- Time complexity of O(n²)
 
 Steps:
 1. Find the smallest element in the unsorted portion.
@@ -53,7 +53,7 @@ Steps:
 
 Example:
 
-<img width="690" height="313" alt="image" src="https://github.com/user-attachments/assets/520ad7f1-a247-459c-ab4e-8479d528a2c8" />
+<img width="690" height="313" alt="image" src="https://github.com/user-attachments/assets/88b25d08-3a3f-48df-8f7f-5df9196f36c5" />
 
 <img width="690" height="313" alt="Screen Shot 05-14-26 at 11 04 AM 001" src="https://github.com/user-attachments/assets/f982fbba-19bc-4676-979d-97fedc29fa9d" />
 
@@ -64,3 +64,36 @@ Example:
 <img width="690" height="313" alt="image" src="https://github.com/user-attachments/assets/bb0166b7-0854-490d-a7eb-793d3a6c7050" />
 
 <img width="690" height="313" alt="image" src="https://github.com/user-attachments/assets/cfcb6e5a-8593-4323-bed8-dc1fa6c19e1a" />
+
+### Insertion Sort
+- Builds the sorted array one element at a time by repeatedly taking the next unsorted element and inserting it into its correct position in the already sorted portion.
+- Time complexity of O(n²) , Ω (n)
+
+Steps:
+1. Start with the second element as a "key."
+2. Compare the key to the elements before it.
+3. Shift elements to the right to make space, and insert the key into the correct position.
+4. Repeat for all remaining elements.
+
+Example:
+
+<img width="690" height="363" alt="image" src="https://github.com/user-attachments/assets/70d5f58c-88d3-4337-bd02-8096a551bdb3" />
+
+### Merge Sort
+A divide and conquer algorithm that recursively divides the array in half until each half contains one element, then merges the halves back together in sorted order.
+
+
+Steps:
+1. Divide the array into two halves.
+2. Recursively sort each half. The value is said to be sorted when it is left only a single value
+3. Merge the two sorted halves together by comparing the smallest elements.
+
+Example:
+
+<img width="690" height="363" alt="image" src="https://github.com/user-attachments/assets/7b2336ea-5047-4adf-8fc6-a3b2ffa1ab11" />
+
+<img width="690" height="363" alt="image" src="https://github.com/user-attachments/assets/b2cbbafe-27ba-4b86-adbe-ff66fd34ca7c" />
+
+<img width="690" height="363" alt="image" src="https://github.com/user-attachments/assets/4a440828-d669-4fb5-9737-39bf605444e6" />
+
+<img width="690" height="363" alt="image" src="https://github.com/user-attachments/assets/8febc383-9b8a-41fe-bf5e-8fee5924528a" />
