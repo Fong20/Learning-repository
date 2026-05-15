@@ -118,3 +118,50 @@ Example: Quick sort with Pivot on the last element
 <img width="1857" height="684" alt="image" src="https://github.com/user-attachments/assets/c953fda9-2140-417a-bf7b-603eba82b2eb" />
 
 <img width="1857" height="684" alt="image" src="https://github.com/user-attachments/assets/8b2d7cb9-83fd-48cf-83c7-bf86a7971904" />
+
+## Heap Sort
+Process:
+- Turns the array into a max heap* , then repeatedly removes the largest element and places it at the end of the array.
+- Time Complexity: O(n log n)
+  
+Steps:
+1. Build a max heap from the array.
+2. Swap the root (largest element) with the last element in the heap.
+3. Reduce the size of the heap by 1 and heapify the root to maintain the heap property.
+4. Repeat until all elements are sorted.
+
+**Building max heap (Heapification of binary tree)**
+- swap the node values such that the parent node is always larger than the child node
+- Start the process from leaf node first
+
+<img width="1815" height="833" alt="image" src="https://github.com/user-attachments/assets/5ff14546-bff7-4ee9-ba50-4215f24b815d" />
+
+<img width="1815" height="833" alt="image" src="https://github.com/user-attachments/assets/c92926f3-d4b2-454c-a7f3-8f2207bd7f39" />
+
+<img width="1815" height="852" alt="image" src="https://github.com/user-attachments/assets/368ec49a-d6fe-4109-b062-cd07787bd317" />
+
+<img width="1815" height="814" alt="image" src="https://github.com/user-attachments/assets/b579df25-2b63-4419-abb2-a0c70a133d00" />
+
+<img width="1815" height="814" alt="image" src="https://github.com/user-attachments/assets/dd2597a2-3ee4-4d78-846b-3e9dc021feed" />
+
+<img width="1815" height="814" alt="image" src="https://github.com/user-attachments/assets/658a8a0c-fec8-4fa4-a71a-ebfb7bcc2e66" />
+
+<img width="1815" height="847" alt="image" src="https://github.com/user-attachments/assets/f3c4093e-8059-4518-8a4b-f7f26fdde01c" />
+
+**Reducing the size of heap and performing heapification**
+
+<img width="1819" height="833" alt="image" src="https://github.com/user-attachments/assets/becf91ea-f941-4675-b744-bd73df464f00" />
+
+<img width="1819" height="833" alt="image" src="https://github.com/user-attachments/assets/703e99c9-945a-445b-8a95-b663449b5612" />
+
+<img width="1819" height="833" alt="image" src="https://github.com/user-attachments/assets/9eb5497e-6f30-4417-97f5-eca57f8b3718" />
+
+<img width="1819" height="833" alt="image" src="https://github.com/user-attachments/assets/e2680c98-3209-4754-bcd3-821338b4b647" />
+
+<img width="1819" height="833" alt="image" src="https://github.com/user-attachments/assets/9fd2a443-f97d-4908-b774-0f12e94e2567" />
+
+<img width="1819" height="833" alt="image" src="https://github.com/user-attachments/assets/34909202-3409-4212-b7eb-0701d850869e" />
+
+## Comparison of Sorting Algorithms
+
+<img width="1750" height="890" alt="image" src="https://github.com/user-attachments/assets/15503c37-3162-48d6-9574-dc707965be09" />
