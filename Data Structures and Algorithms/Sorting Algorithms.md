@@ -100,7 +100,7 @@ Example:
 
 ## Quick Sort
 - A divide and conquer algorithm that selects a "pivot" element and partitions the array into elements smaller than the pivot and elements larger than the pivot.
-- Time Complexity: O(n log n), But O(n²) for poor choice of pivot. If the pivot is chosen on as the middle of the value, time complexity will be O(n log n). However, if the pivot is chosen on as either the extreme value (max or min), time complexity will be O(n²)
+- Time Complexity: O(n log n), But O(n²) for poor choice of pivot. If the pivot is chosen on as the middle of the value, time complexity will be O(n log n). However, if the pivot is chosen on as either the extreme value (max or min) or the data is reversed, time complexity will be O(n²). The data needs to be random
 
 Steps:
 1. Pick a pivot (usually the first, last, or middle element).
