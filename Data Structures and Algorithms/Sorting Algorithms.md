@@ -97,3 +97,24 @@ Example:
 <img width="690" height="363" alt="image" src="https://github.com/user-attachments/assets/4a440828-d669-4fb5-9737-39bf605444e6" />
 
 <img width="690" height="363" alt="image" src="https://github.com/user-attachments/assets/8febc383-9b8a-41fe-bf5e-8fee5924528a" />
+
+## Quick Sort
+- A divide and conquer algorithm that selects a "pivot" element and partitions the array into elements smaller than the pivot and elements larger than the pivot.
+- Time Complexity: O(n log n), But O(n²) for poor choice of pivot. If the pivot is chosen on as the middle of the value, time complexity will be O(n log n). However, if the pivot is chosen on as either the extreme value (max or min), time complexity will be O(n²)
+
+Steps:
+1. Pick a pivot (usually the first, last, or middle element).
+2. Partition the array such that all elements less than the pivot are on the left, and all elements greater are on the right.
+3. Recursively apply quick sort to the left and right sub arrays.
+
+Example: Quick sort with Pivot on the last element
+
+<img width="1857" height="693" alt="image" src="https://github.com/user-attachments/assets/e02e6b20-1e63-43f7-9de3-075622f7ac8b" />
+
+<img width="1857" height="693" alt="image" src="https://github.com/user-attachments/assets/d9111499-e529-4303-a11a-40932cc1a5d0" />
+
+<img width="1857" height="684" alt="image" src="https://github.com/user-attachments/assets/08d26797-8c3b-4bcc-a224-7042b0a55dc2" />
+
+<img width="1857" height="684" alt="image" src="https://github.com/user-attachments/assets/c953fda9-2140-417a-bf7b-603eba82b2eb" />
+
+<img width="1857" height="684" alt="image" src="https://github.com/user-attachments/assets/8b2d7cb9-83fd-48cf-83c7-bf86a7971904" />
