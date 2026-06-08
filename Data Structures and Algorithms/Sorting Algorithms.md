@@ -1,4 +1,4 @@
-# Sorting Algorithms
+# 02. Sorting Algorithms
 
 ## Arrays
 - Collection of values or variables arranged contiguously (New values cannot be added in the array as the structure is fixed.)
